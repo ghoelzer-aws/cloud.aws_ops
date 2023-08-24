@@ -16,7 +16,7 @@ sshkey_pair_name: "{{ resource_prefix }}-key"
 
 bastion_host_name: "{{ resource_prefix }}-bastion"
 bastion_host_username: fedora
-bastion_host_type: t4g.xlarge
+bastion_host_type: t.xlarge
 bastion_host_required_packages:
   - python3
   - python-virtualenv
@@ -27,7 +27,7 @@ bastion_host_required_packages:
   - ansible
 bastion_host_venv_path: ~/env
 
-workers_instance_type: t4g.large
+workers_instance_type: t.large
 workers_user_name: fedora
 number_of_workers: 2
 
@@ -53,6 +53,6 @@ rds_master_password: L#5cH2mgy_
 rds_master_user: ansible
 
 image_filter: Fedora-Cloud-Base-35-*
-image_arch: arm64
+image_arch: x86_64
 
 operation: create
