@@ -15,7 +15,7 @@
     - name: Get image ID to create an instance
       amazon.aws.ec2_ami_info:
         filters:
-          architecture: x86_64
+          architecture: ARM64
           virtualization-type: hvm
           root-device-type: ebs
           name: "{{ image_filter }}"
