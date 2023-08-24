@@ -27,7 +27,7 @@ bastion_host_required_packages:
   - ansible
 bastion_host_venv_path: ~/env
 
-workers_instance_type: t4.large
+workers_instance_type: t4g.large
 workers_user_name: fedora
 number_of_workers: 2
 
